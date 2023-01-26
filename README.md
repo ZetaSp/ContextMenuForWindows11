@@ -1,30 +1,31 @@
-# Custom Context Menu
+# 自定义右键菜单
 
- Add Custom Context Menu For Windows11
+Windows 11 自定义新版右键菜单
+
+这是汉化修改版本，原版 [Custom Context Menu](https://github.com/ikas-mc/ContextMenuForWindows11)，请支持原作者。
+
+<img src="https://raw.githubusercontent.com/ZetaSp/ContextMenuForWindows11/main/screenshots/menu.png" width=500 >
 
 
-<img src="https://raw.githubusercontent.com/ikas-mc/ContextMenuForWindows11/main/screenshots/menu.png" width=500 >
+##  下载
 
-
-##  Download
-
-Windows store|Github release
+微软商店|Github 发行
 ------------ | -------------
-<a href="https://www.microsoft.com/en-us/p/custom-context-menu/9pc7bzz28g0x">Windows store </a> <a href="https://apps.microsoft.com/store/detail/custom-context-menu/9PC7BZZ28G0X">Windows store (new)</a>|<a href="https://github.com/ikas-mc/ContextMenuForWindows11/releases">Github release </a>
-ms-windows-store://pdp/?ProductId=9PC7BZZ28G0X|use self-signed certificate,not recommended
+<a href="https://www.microsoft.com/store/apps/9N3R1B2TP3DB">微软商店</a>|<a href="https://github.com/ZetaSp/ContextMenuForWindows11/releases">最新发行版</a>
+微软官方软件商店下载|自签名证书发行，不推荐
 
 
 
 
 
-##  Guides
-https://github.com/ikas-mc/ContextMenuForWindows11/wiki
+##  用法
+[原版中文帮助](https://github.com/ikas-mc/ContextMenuForWindows11/wiki/帮助)
 
-##  Build   
-https://github.com/ikas-mc/ContextMenuForWindows11/blob/main/build.md
+##  构建   
+[原版构建指南](https://github.com/ikas-mc/ContextMenuForWindows11/blob/main/build.md)
 
 
-## More 
+##  参考
 
 https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/desktop-to-uwp-extensions#context-menu
 
