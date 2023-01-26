@@ -1,0 +1,1 @@
+{"title":"发送到 wsa","exe":"PowerShell","param":"adb push \\\"{path}\\\"  /storage/emulated/0/Download/\\\"{name}\\\"","icon":"","acceptExts":"","acceptDirectory":false,"acceptFile":true,"acceptMultipleFilesFlag":0,"pathDelimiter":"","paramForMultipleFiles":"","index":0}

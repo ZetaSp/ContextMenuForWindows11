@@ -1,0 +1,1 @@
+{"title":"用 7z 打开","exe":"\"C:\\Program Files\\7-Zip\\7zG.exe\"","param":"x \"{path}\" -o\"{path}\"~","icon":"","acceptExts":"","acceptDirectory":false,"acceptFile":true,"acceptMultipleFilesFlag":0,"pathDelimiter":"","paramForMultipleFiles":"","index":0}

@@ -1,0 +1,1 @@
+{"title":"调试自定义菜单","exe":"customeContextMenuDebug.exe","param":" \"{path}\"","icon":"","acceptExts":"*","acceptDirectory":true,"acceptFile":true,"acceptMultipleFilesFlag":0,"pathDelimiter":",","paramForMultipleFiles":" {path}","index":0}

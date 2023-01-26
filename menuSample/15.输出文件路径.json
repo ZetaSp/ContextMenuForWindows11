@@ -1,0 +1,1 @@
+{"title":"输出文件路径","exe":"Powershell","param":" -noexit echo  {path}","icon":"","acceptExts":"","acceptDirectory":true,"acceptFile":true,"acceptMultipleFilesFlag":0,"pathDelimiter":"","paramForMultipleFiles":"","index":0}
