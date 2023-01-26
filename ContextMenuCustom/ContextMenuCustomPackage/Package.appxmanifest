@@ -12,13 +12,13 @@
   IgnorableNamespaces="uap uap3 desktop desktop4 desktop5 com rescap">
 
   <Identity
-    Name="7061touchwp.CustomContextMenu"
-    Publisher="CN=ikas-mc-dev"
-    Version="3.1.0.0" />
+    Name="5819Zetaspace.1352120135195"
+    Publisher="CN=62A7BC0F-2F81-42F5-9804-BC37DB28EA77"
+    Version="3.5.0.0" />
 
   <Properties>
-    <DisplayName>Custom Context Menu</DisplayName>
-    <PublisherDisplayName>touchwp</PublisherDisplayName>
+    <DisplayName>自定义右键菜单</DisplayName>
+    <PublisherDisplayName>Zetaspace</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
 
@@ -36,8 +36,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="Custom Context Menu"
-        Description="Custom Context Menu For Win11"
+        DisplayName="自定义右键菜单"
+        Description="Win11 自定义右键菜单"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
@@ -60,7 +60,7 @@
         </desktop4:Extension>
         <com:Extension Category="windows.comServer">
           <com:ComServer>
-            <com:SurrogateServer  DisplayName="Custome Context Menu">
+            <com:SurrogateServer  DisplayName="自定义右键菜单">
               <com:Class Id="46F650E5-9959-48D6-AC13-A9637C5B3787" Path="ContextMenuCustomHost.dll" ThreadingModel="STA"/>
             </com:SurrogateServer>
           </com:ComServer>

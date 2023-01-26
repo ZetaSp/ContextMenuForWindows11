@@ -28,35 +28,35 @@
   <PropertyGroup>
     <ProjectGuid>0d0e2a13-5161-4315-932f-d24400934867</ProjectGuid>
     <TargetPlatformVersion>10.0.22000.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <EntryPointProjectUniqueName>..\ContextMenuCustomApp\ContextMenuCustomApp.csproj</EntryPointProjectUniqueName>
-    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
-    <PackageCertificateThumbprint>948914CC24B29D89B72470F7B0C2D92F1B2C550A</PackageCertificateThumbprint>
-    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <PackageCertificateThumbprint>20AD00FF34F8E6B47DAE7085CC6B38FA367EE47E</PackageCertificateThumbprint>
+    <GenerateTemporaryStoreCertificate>False</GenerateTemporaryStoreCertificate>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <AppxBundle>Always</AppxBundle>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <AppxBundle>Always</AppxBundle>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <AppxBundle>Always</AppxBundle>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <AppxBundle>Always</AppxBundle>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -66,7 +66,6 @@
   <ItemGroup>
     <Content Include="Images\Wide310x150Logo.scale-400.png" />
     <None Include="Package.StoreAssociation.xml" />
-    <None Include="ContextMenuCustomPackage_TemporaryKey.pfx" />
     <Content Include="Images\LargeTile.scale-100.png" />
     <Content Include="Images\LargeTile.scale-125.png" />
     <Content Include="Images\LargeTile.scale-150.png" />

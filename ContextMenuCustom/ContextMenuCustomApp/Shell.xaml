@@ -35,7 +35,7 @@
                     Margin="4,0,0,0"
                     VerticalAlignment="Center"
                     Style="{StaticResource CaptionTextBlockStyle}"
-                    Text="Custom Context Menu" />
+                    Text="自定义右键菜单" />
                 <muxc:ProgressRing
                     x:Name="StatusInfo"
                     Width="16"

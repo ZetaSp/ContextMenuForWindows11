@@ -38,7 +38,7 @@ namespace ContextMenuCustomApp.View.Menu
 
         public MenuItem New()
         {
-            var item = new MenuItem() { Title = "new menu", Param = @"""{path}""", AcceptFile = true, AcceptDirectory = true };
+            var item = new MenuItem() { Title = "我的右键菜单", Param = @"""{path}""", AcceptFile = true, AcceptDirectory = true };
             MenuItems.Add(item);
             return item;
         }
@@ -50,7 +50,7 @@ namespace ContextMenuCustomApp.View.Menu
                 await _menuService.SaveAsync(item);
                 await LoadAsync();
                 await UpdateCache();
-                OnMessage("Save Successfully");
+                OnMessage("保存成功");
             });
         }
 
@@ -61,7 +61,7 @@ namespace ContextMenuCustomApp.View.Menu
                 await _menuService.DeleteAsync(item);
                 await LoadAsync();
                 await UpdateCache();
-                OnMessage("Delete Successfully");
+                OnMessage("删除成功");
             });
         }
 
@@ -89,7 +89,7 @@ namespace ContextMenuCustomApp.View.Menu
             get
             {
                 var value = ApplicationData.Current.LocalSettings.Values["Cache_Time"];
-                return (value as string) ?? "No Cache";
+                return (value as string) ?? "无缓存";
             }
         }
 
@@ -131,7 +131,7 @@ namespace ContextMenuCustomApp.View.Menu
             {
                 await _menuService.BuildToCacheAsync();
                 ApplicationData.Current.LocalSettings.Values["Cache_Time"] = DateTime.Now.ToString(CultureInfo.CurrentCulture);
-                OnMessage("Build Successfully");
+                OnMessage("构建成功");
             });
         }
 
@@ -143,7 +143,7 @@ namespace ContextMenuCustomApp.View.Menu
                 {
                     _menuService.ClearCache();
                     ApplicationData.Current.LocalSettings.Values.Remove("Cache_Time");
-                    OnMessage("Clear Successfully");
+                    OnMessage("清除成功");
                 });
             });
         }
@@ -162,14 +162,14 @@ namespace ContextMenuCustomApp.View.Menu
         public string GetCustomMenuName()
         {
             var value = ApplicationData.Current.LocalSettings.Values["Custom_Menu_Name"];
-            return (value as string) ?? "Open With";
+            return (value as string) ?? "自定义";
         }
 
         public async void SetCustomMenuName(string name)
         {
             await Task.Run(() =>
             {
-                ApplicationData.Current.LocalSettings.Values["Custom_Menu_Name"] = name ?? "Open With";
+                ApplicationData.Current.LocalSettings.Values["Custom_Menu_Name"] = name ?? "自定义";
             });
         }
 

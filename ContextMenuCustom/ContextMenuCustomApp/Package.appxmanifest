@@ -11,15 +11,15 @@
   IgnorableNamespaces="uap mp desktop4 desktop5 com rescap">
 
   <Identity
-    Name="7061touchwp.CustomContextMenu"
-    Publisher="CN=test"
+    Name="5819Zetaspace.1352120135195"
+    Publisher="CN=62A7BC0F-2F81-42F5-9804-BC37DB28EA77"
     Version="1.0.1.0" />
 
-  <mp:PhoneIdentity PhoneProductId="a6cb77ab-4892-4cdd-9bee-8716defefa2e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="df7818f8-d328-4c65-bb9e-7e6522d6efb8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Custom Context Menu</DisplayName>
-    <PublisherDisplayName>ikas</PublisherDisplayName>
+    <DisplayName>自定义右键菜单</DisplayName>
+    <PublisherDisplayName>Zetaspace</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -36,10 +36,10 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="MenuCustomApp.App">
       <uap:VisualElements
-        DisplayName="Custom Context Menu (UWP)"
+        DisplayName="自定义右键菜单 (UWP)"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Custom Context Menu For Win11"
+        Description="Win11 自定义右键菜单"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

@@ -53,7 +53,7 @@ namespace ContextMenuCustomApp.View.Menu
             }
             else
             {
-                this.ShowMessage("no selected item", MessageType.Warnning);
+                this.ShowMessage("未选择菜单", MessageType.Warnning);
             }
         }
 
@@ -61,7 +61,7 @@ namespace ContextMenuCustomApp.View.Menu
         {
             if (CommandList.SelectedItem is MenuItem item)
             {
-                var result = await Alert.ChooseAsync("confirm to delete", "Warn");
+                var result = await Alert.ChooseAsync("确定删除", "警告");
                 if (result)
                 {
                     await _viewModel.DeleteAsync(item);
@@ -69,7 +69,7 @@ namespace ContextMenuCustomApp.View.Menu
             }
             else
             {
-                this.ShowMessage("no selected item", MessageType.Warnning);
+                this.ShowMessage("未选择菜单", MessageType.Warnning);
             }
         }
 
@@ -86,7 +86,7 @@ namespace ContextMenuCustomApp.View.Menu
             }
             else
             {
-                this.ShowMessage("no selected item", MessageType.Warnning);
+                this.ShowMessage("未选择菜单", MessageType.Warnning);
             }
         }
         private async void OpenExeButton_OnClick(object sender, RoutedEventArgs e)

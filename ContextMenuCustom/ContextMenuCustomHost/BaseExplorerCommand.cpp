@@ -1,11 +1,11 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include "BaseExplorerCommand.h"
 
 
 IFACEMETHODIMP BaseExplorerCommand::GetTitle(_In_opt_ IShellItemArray* items, _Outptr_result_nullonfailure_ PWSTR* name)
 {
 	*name = nullptr;
-	return SHStrDupW(L"Open With", name);
+	return SHStrDupW(L"自定义", name);
 }
 
 IFACEMETHODIMP BaseExplorerCommand::GetIcon(_In_opt_ IShellItemArray* items, _Outptr_result_nullonfailure_ PWSTR* icon)
