@@ -81,7 +81,7 @@ IFACEMETHODIMP CustomExplorerCommand::GetState(_In_opt_ IShellItemArray *selecti
 			wchar_t szWndClassName[MAX_PATH] = { 0 };
 			GetClassName(hWnd, szWndClassName, _countof(szWndClassName));
 			// window class name: "NamespaceTreeControl"
-			if (wcscmp(szWndClassName, L"NamespaceTreeControl"))
+			if (wcscmp(szWndClassName, L"NamespaceTreeControl") != 0)
 			{
 				*cmdState = ECS_HIDDEN;
 				return S_OK;
@@ -123,7 +123,7 @@ IFACEMETHODIMP CustomExplorerCommand::GetState(_In_opt_ IShellItemArray *selecti
 		}
 	}
 
-	if (m_commands.size() == 0)
+	if (m_commands.empty())
 	{
 		*cmdState = ECS_HIDDEN;
 	}
@@ -156,10 +156,11 @@ void CustomExplorerCommand::ReadCommands(bool multipleFiles, const std::wstring 
 	if (menus.Size() > 0)
 	{
 		std::wstring ext;
+		std::wstring name;
 		bool isDirectory = true; // TODO current_path may be empty when right click on desktop.  set directory as default?
 		if (!multipleFiles)
 		{
-			PathHelper::getExt(currentPath, isDirectory, ext);
+			PathHelper::getExt(currentPath, isDirectory, name, ext);
 		}
 
 		auto current = menus.begin();
@@ -167,11 +168,12 @@ void CustomExplorerCommand::ReadCommands(bool multipleFiles, const std::wstring 
 		{
 			if (current.HasCurrent())
 			{
-				auto conent = winrt::unbox_value_or<winrt::hstring>(current.Current().Value(), L"");
-				if (conent.size() > 0)
+				auto content = winrt::unbox_value_or<winrt::hstring>(current.Current().Value(), L"");
+				
+				if (!content.empty())
 				{
-					const auto command = Make<CustomSubExplorerCommand>(conent);
-					if (command->Accept(multipleFiles, isDirectory, ext))
+					const auto command = Make<CustomSubExplorerCommand>(content);
+					if (command->Accept(multipleFiles, isDirectory, name, ext))
 					{
 						m_commands.push_back(command);
 					}
@@ -187,9 +189,10 @@ void CustomExplorerCommand::ReadCommands(bool multipleFiles, const std::wstring 
 			folder /= "custom_commands";
 			if (exists(folder) && is_directory(folder)) {
 				std::wstring ext;
+				std::wstring name;
 				bool isDirectory = true; //TODO current_path may be empty when right click on desktop.  set directory as default?
 				if (!multipleFiles) {
-					PathHelper::getExt(currentPath, isDirectory, ext);
+					PathHelper::getExt(currentPath, isDirectory, name, ext);
 				}
 
 				for (auto& file : directory_iterator{ folder })
@@ -199,7 +202,7 @@ void CustomExplorerCommand::ReadCommands(bool multipleFiles, const std::wstring 
 					buffer << fs.rdbuf();//TODO 
 					auto content = winrt::to_hstring(buffer.str());
 					auto command = Make<CustomSubExplorerCommand>(content);
-					if (command->Accept(multipleFiles, isDirectory, ext)) {
+					if (command->Accept(multipleFiles, isDirectory, name, ext)) {
 						m_commands.push_back(command);
 					}
 				}
