@@ -4,14 +4,14 @@ Windows 11 自定义新版右键菜单
 
 这是汉化修改版本，原版 [Custom Context Menu](https://github.com/ikas-mc/ContextMenuForWindows11)，请支持原作者。
 
-<img src="https://raw.githubusercontent.com/ZetaSp/ContextMenuForWindows11/main/screenshots/menu.png" width=500 >
+<img src="https://raw.githubusercontent.com/zetaloop/ContextMenuForWindows11/main/screenshots/menu.png" width=500 >
 
 
 ##  下载
 
 微软商店|Github 发行
 ------------ | -------------
-<a href="https://www.microsoft.com/store/apps/9N3R1B2TP3DB">微软商店</a>|<a href="https://github.com/ZetaSp/ContextMenuForWindows11/releases">最新发行版</a>
+<a href="https://www.microsoft.com/store/apps/9N3R1B2TP3DB">微软商店</a>|<a href="https://github.com/zetaloop/ContextMenuForWindows11/releases">最新发行版</a>
 微软官方软件商店下载|自签名证书发行，不推荐
 
 
