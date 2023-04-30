@@ -67,7 +67,8 @@ namespace ContextMenuCustomApp.Service.Menu
             var (result, message) = MenuItem.Check(item);
             if (!result)
             {
-                throw new Exception($"{message} is empty");
+                message = message.Replace("Title", "名称").Replace("Exe", "程序").Replace("Param", "参数");
+                throw new Exception($"{message}为空");
             }
 
             if (item.File == null)

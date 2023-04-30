@@ -61,7 +61,7 @@ namespace ContextMenuCustomApp.View.Menu
         {
             if (CommandList.SelectedItem is MenuItem item)
             {
-                var result = await Alert.ChooseAsync("确定删除吗？", "警告");
+                var result = await Alert.ChooseAsync("确定删除这项菜单吗？", "警告");
                 if (result)
                 {
                     await _viewModel.DeleteAsync(item);
