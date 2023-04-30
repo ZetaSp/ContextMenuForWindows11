@@ -171,7 +171,7 @@
 
                     <controls:SettingItem Header="名称">
                         <controls:SettingItem.ActionContent>
-                            <TextBox PlaceholderText="用记事本打开" Text="{Binding Title, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            <TextBox PlaceholderText="比如：用记事本打开" Text="{Binding Title, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </controls:SettingItem.ActionContent>
                     </controls:SettingItem>
 
@@ -200,7 +200,7 @@
                                 Width="56"
                                 Margin="8,0,0,-1"
                                 Click="OpenExeButton_OnClick"
-                                ToolTipService.ToolTip="选择">
+                                ToolTipService.ToolTip="选择程序文件">
                                 <SymbolIcon Symbol="OpenFile" />
                             </Button>
                         </controls:SettingItem.RightContent>
@@ -263,7 +263,7 @@
                         <controls:SettingItem.Description>
                             <HyperlinkButton
                                 Padding="0"
-                                NavigateUri="https://github.com/ikas-mc/ContextMenuForWindows11/wiki/Help#multiple-files"
+                                NavigateUri="https://github.com/ikas-mc/ContextMenuForWindows11/wiki/帮助#多文件支持"
                                 RelativePanel.AlignRightWithPanel="True">
                                 <TextBlock Text="点击阅读说明" />
                             </HyperlinkButton>
@@ -316,8 +316,8 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center">
                     <Paragraph>
-                        <Hyperlink Click="Add_Click">添加一个右键菜单</Hyperlink>
-                        <Run>，或者编辑已有的菜单</Run>
+                        <Hyperlink Click="Add_Click">添加新的自定义右键菜单</Hyperlink>
+                        <Run>，编辑其他自定义菜单</Run>
                     </Paragraph>
                 </RichTextBlock>
 
@@ -386,7 +386,7 @@
                 <HyperlinkButton
                     Margin="4,0"
                     Padding="4"
-                    NavigateUri="https://github.com/ZetaSp/ContextMenuForWindows11">
+                    NavigateUri="https://github.com/zetaloop/ContextMenuForWindows11">
                     <TextBlock>
                         <Run>汉化</Run>
                     </TextBlock>
