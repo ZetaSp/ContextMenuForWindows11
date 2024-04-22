@@ -1,5 +1,8 @@
 # 自定义右键菜单
 
+> [!WARNING]  
+> 由于上次构建一直未能解决右键菜单不出现的问题，所以暂时在应用商店里隐藏了，等我啥时候解决了再发。
+
 Windows 11 创建自定义新版右键菜单
 
 这是汉化修改版本，原版 [Custom Context Menu](https://github.com/ikas-mc/ContextMenuForWindows11)，请支持原作者。
